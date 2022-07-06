@@ -75,7 +75,8 @@ body{
     opacity: .7;
 }
 
-.op-btn{
+.op-btn,
+.clear{
     background-color: orange;
     font-size: 1.5rem;
 }
