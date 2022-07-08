@@ -18,8 +18,12 @@ opBtns.forEach(btn => {
 function setOp(){
     switch(display.innerText){
 
-        case '': display.innerText = '-'         
-                 break;
+        case '': 
+        if(this.innerText == '-'){
+            display.innerText = '-'
+        }
+        else op = this.innerText
+        break;
 
         default: previous = Number(display.innerText)
                  op = this.innerText
