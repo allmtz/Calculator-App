@@ -1,7 +1,15 @@
 
 
+:root{
+    --radius: 20px
+
+}
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 
 body{
@@ -10,65 +18,59 @@ body{
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: black;
+    background-color: rgb(243, 225, 199);
+
 }
 
 .display{
-    max-width: 88%;
-    height: 15%;
-    background-color: black;
-    position: relative;
-    left: 20px;
-    top: 10px;
+    height: 3.5rem;
+    padding: 1rem .5rem 0 0;
+    background-color:rgb(211, 169, 114); 
     color: white;
     text-align: end;
+    font-size: 2rem;
+    max-width: 270px;
     overflow: hidden;
-    
-}
 
-.display h2{
-    padding-right: 10px;
 }
-
 
 .container{
     background-color: rgba(73, 108, 223, 0.817);
-    height: 350px;
-    width: 430px;
-    border-radius: 20px;
+    border-radius: var(--radius);
+    min-width: 270px;
+
 }
 
 .column{
     display: flex;
     flex-direction: column;
-    
+        
 }
-.numbers,
-.operations{
-    display: flex;
 
+.numbers{
+    display: flex;
+    justify-content: center;
+    
 }
 
 .inputs{
     display: flex;
-    margin: 20px auto 20px auto;
-    width: 80%;
-    height: 75%;
-    align-items: top;
+    margin: 20px auto 30px auto;
     justify-content: center;
 
 }
 
 .btn{
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     color: black;
     background-color: white;
     border-radius: 10px;
     border: none;
     margin: 3px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     user-select: none;
     cursor: pointer;
+
 }
 
 .btn:hover{
@@ -78,15 +80,12 @@ body{
 .op-btn,
 .clear{
     background-color: orange;
-    font-size: 1.5rem;
-}
-
-.num-btn{
-    font-size: 1.5rem;
+    
 }
 
 .equal-btn{
     background-color: rgb(43, 226, 205);
+    
 }
 
 
